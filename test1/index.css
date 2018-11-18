@@ -1,0 +1,189 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ^^^ CSS RESET ^^^ */
+
+body {
+    background-image: url('./test1_assets/background.png');
+    color: white;
+}
+
+
+/* Start of header styling */
+
+.header {
+    width: 100%;
+    min-width: 320px;
+    height: 44px;
+    background-color: #1C1C1C;
+    padding: 0px 8px;
+}
+
+.nav {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 17px;
+    font-weight: 800;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.back-button {
+    color: white;
+    background-color: black;
+    height: 27px;
+    width: 56px;
+    font-size: 13px;
+    border: 1px solid #2D2D2D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 7px;
+    border-radius: 3px;
+
+}
+
+.back-button .fa-chevron-left {
+    font-size: 9px;
+    margin-right: 5px;
+}
+
+/* End of header Styling */
+
+/* Start of Hotel Details Styling */
+.container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0px 19px;
+}
+
+.hotel-details {
+    width: 100%;
+}
+
+.hotel-img {
+    width: 100%;
+    height: auto;
+    border: 4px solid white;
+    margin: 20px 0px 10px;
+}
+
+.hotel-details h2 {
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.hotel-details address {
+    line-height: 20px;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+.phone-number {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+/* End of Hotel Details Styling */
+
+
+/* Start of Options Styling */
+
+.options {
+    margin-top: 18px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.options a:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.options a {
+    width: 100%;
+    height: 45px;
+    background-color: #d4dce3;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 17px;
+    border-bottom: 1px solid gray;
+}
+
+.options .fa-chevron-right {
+    margin-right: -3px;
+}
+
+/* End of Options Styling */
